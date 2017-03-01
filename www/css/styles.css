@@ -10,9 +10,22 @@
    See https://github.com/apache/cordova-plugin-statusbar
 */
 
+.page-content{}
+.panel{background: #fff}
+
 .statusbar-overlay {
     /*background: #000000;*/
 }
 
-.list-block .item-content{background:#111;}
-.list-block .item-content a{color:#fff;display:block;}
+{}
+.list-block .item-content a{color:#6d6d72;display:block;font-size: 12px;padding-left: 20px;}
+.content-block-title a{color:#6d6d72}
+.back-btn{font-size: 11px;margin-left: 0px !important;}
+
+.icon{height: 20px;width: 20px;margin: 0px 5px;}
+
+.icon-home{background-image: url(../img/icons/icon-home.png)}
+.icon-about{background-image: url(../img/icons/icon-about.png)}
+.icon-pages{background-image: url(../img/icons/icon-pages.png)}
+
+.featured-img{height:160px;width:320px;margin-bottom: 10px;}
