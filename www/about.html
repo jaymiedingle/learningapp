@@ -21,7 +21,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Your app title -->
-    <title>Cisco App</title>
+    <title>Jaymie's Learning App</title>
 
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
@@ -39,30 +39,47 @@
 
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
+
+
+
+
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <div class="content-block-title">Pages</div>
+            <div class="content-block-title">
+                <a href="index.html" class="close-panel"><i class="icon icon-home"></i>Home</a>
+            </div>
+            <div class="content-block-title">
+                <a href="about.html" class="close-panel"><i class="icon icon-about"></i>About</a>
+            </div>
+            <div class="content-block-title"><i class="icon icon-pages"></i>Pages</div>
             <div class="list-block">
               <ul>
                 <li class="item-content">
                   <div class="item-inner">
                     <div class="item-title">
-                        <a href="pages/intro.html" class="close-panel">Introduction to Cisco</a>
+                        <a href="pages/intro.html" class="close-panel">Intro to Web Development</a>
                     </div>
                   </div>
                 </li>
                 <li class="item-content">
                   <div class="item-inner">
                     <div class="item-title">
-                        <a href="pages/page1.html" class="close-panel">Page 1</a>
+                        <a href="pages/htmlcss.html" class="close-panel">HTML and CSS</a>
                     </div>
                   </div>
                 </li>
                 <li class="item-content">
                   <div class="item-inner">
                     <div class="item-title">
-                        <a href="pages/page2.html" class="close-panel">Page 2</a>
+                        <a href="pages/javascript.html" class="close-panel">Basics of Javascript</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">
+                        <a href="pages/php101.html" class="close-panel">PHP 101</a>
                     </div>
                   </div>
                 </li>
@@ -85,7 +102,7 @@
                     </div> -->
                     
                     <div class="center">
-                        <img src="img/logo-cisco.svg" alt="" height="40px">
+                        About
                     </div>
                     <div class="right">
                         <a href="#" class="link icon-only open-panel">
@@ -102,12 +119,19 @@
                 <!-- Page, "data-page" contains page name -->
                 <div data-page="index" class="page">
                     <!-- Scrollable page content -->
-                    <div class="page-content">
-                        <div class="content-block" style="text-align:center">
-                            <h2>About</h2>
-                            <small>Powered by Jaymie Dingle</small>
+                    <div class="page-content" style="background: url(img/bg-image.jpg)">
+                        <div class="content-block" style="text-align:center;color:#fff;margin-top:15%">
+                            <img src="img/web-development.png" style="width:100px;"><br />
+                            <p style="margin-bottom:60%">
+                                 This is a Web Development learning App.<br />
+                                The objective is to create an educational app.<br /> 
+                                This one is created using<br /> 
+                                <strong style="color:#ffffcc">HTML, CSS, Javascript <br />and Phonegap</strong>
+                            
+                            </p>
+
+                            <small style="font-size:10px">Powered by Jaymie Dingle</small>
                             <!-- Link to another page -->
-                        
                             
                         </div>
                     </div>
@@ -115,26 +139,26 @@
             </div>
 
 
-
-
-
-            
             <!-- Bottom Toolbar-->
             <div class="toolbar tabbar">
                 <div class="toolbar-inner">
-                    <a href="#tab1" class="tab-link">
-                        <i class="icon demo-icon-1"></i> Home
-                    </a>
+                    
                     <a href="#tab2" class="tab-link open-panel">
-                        <i class="icon demo-icon-2"></i> Pages
+                        <img src="img/open-book-icon.png" alt="" height="50px">
                     </a>
-                    <a href="about.html" class="tab-link">
-                        <i class="icon demo-icon-3"></i> About
-                    </a>
+                    
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
