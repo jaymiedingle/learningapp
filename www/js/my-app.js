@@ -17,6 +17,8 @@ $$(document).on('deviceready', function() {
 });
 
 
+
+
 // Now we need to run the code that will be executed only for About page.
 
 // Option 1. Using page callback for page (for "about" page in this case) (recommended way):
@@ -30,6 +32,16 @@ $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
 
+    
+    //slider
+    var mySwiper = myApp.swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationHide: false,
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+    });
+
     if (page.name === 'about') {
         // Following code will be executed for page with data-page attribute equal to "about"
         //myApp.alert('Here comes About page');
@@ -41,6 +53,9 @@ $$(document).on('pageInit', function (e) {
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
     //myApp.alert('Here comes About page');
+
+
+
 })
 
 
