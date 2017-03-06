@@ -9,6 +9,7 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
+.page-content{background:#4c4ca6}
 
 /*slider*/
 .swiper-custom {
@@ -63,3 +64,11 @@
 .featured-img{height:140px;width:300px;margin-bottom: 10px;}
 .featured-img-html{width:300px;}
 
+.content-body{
+  padding: 0 50px;
+  font-size: 12px;
+  text-align:left;
+}
+
+.swiper-slide .content-body .main-topic-wrap {padding:10px;background:#ffe1f0}
+.swiper-slide strong{color:#007aff}
