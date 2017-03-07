@@ -8,7 +8,7 @@
                 <i class="icon icon-back"></i><span class="back-btn">Back</span>
             </a>
         </div>
-        <div class="center sliding">HTML</div>
+        <div class="center sliding">CSS</div>
         
     </div>
 </div>
@@ -16,13 +16,12 @@
 
 
 <div class="pages">
-    <div data-page="html" class="page">
+    <div data-page="css" class="page">
         <div class="page-content">
 
 
               <div class="swiper-custom">
-                <div class="swiper-container" >
-
+                <div class="swiper-container">
                   <div class="swiper-pagination"></div>
                   <div class="swiper-wrapper">
 
@@ -30,11 +29,11 @@
                     <!--slider item-->
                     <div class="swiper-slide" style="text-align:center">
                         <span></span>
-                        <img class="featured-img" src="img/html.jpg" alt="" >
+                        <img class="featured-img" src="img/css.png" alt="" >
                         <div>
-                            <h3>What is HTML?</h3>
+                            <h3>What is CSS?</h3>
                             <div class="content-body" >
-                                <strong>HTML stands for Hyper Text Markup Language,</strong>  and is the code that all web pages are written in. The best way to think of HTML is that it’s a way of annotating a mass of plain text to turn it into a web page. By doing this, it can describe each and every part of the page’s structure. <br /><br />
+                                <strong>CSS stands for Cascading Style Sheets</strong>  , and is a code that describes how to display HTML <br /><br />
 
                                 
                                 <div class="main-topic-wrap">
@@ -223,116 +222,26 @@
                         <div>
                             
                             <div class="content-body" >
-                                <h3>Defining an HTML Table</h3>
-                                <strong>An HTML table is defined with the &#60;table&#62; tag.</strong>
-                                Each table row is defined with the &#60;tr&#62; tag. A table header is defined with the &#60;th&#62; tag. By default, table headings are bold and centered. A table data/cell is defined with the &#60;td&#62;a tag.<br /><br />
-
+                                <h3>Title Tag</h3>
+                                You probably noticed the &#60;title&#62; tag and that it has the same contents as the &#60;h1&#62; tag. What’s the difference? 
 
                                 <div class="main-topic-wrap">
                                    
-                                    &#60;table style="width:100%"&#62;<br />
-                                      &#60;tr&#62;<br />
-                                        &#60;th&#62;Firstname&#60;/th&#62;<br />
-                                       &#60;th&#62;Lastname&#60;/th&#62;<br />
-                                        &#60;th&#62;Age&#60;/th&#62;<br />
-                                      &#60;/tr&#62;<br />
-                                      &#60;tr&#62;<br />
-                                        &#60;td>Jill&#60;/td&#62;<br />
-                                        &#60;td>Smith&#60;/td&#62; <br />
-                                        &#60;td>50&#60;/td&#62;<br />
-                                      &#60;/tr&#62;<br />
-                                      &#60;tr&#62;<br />
-                                        &#60;td>Eve&#60;/td&#62;<br />
-                                        &#60;td>Jackson&#60;/td&#62; <br />
-                                        &#60;td>94&#60;/td&#62;<br />
-                                      &#60;/tr&#62;<br />
-                                    &#60;/table&#62;
+                                    While <strong>&#60;h1&#62;</strong> is what appears on the page itself, <strong>&#60;title&#62; is used as the title of the browser window or tab.</strong> <strong>&#60;title&#62;</strong> is also used in search engine results. The contents of these two tags don’t need to be identical, but sometimes they are.
                                 </div>
-                                <br />
-
-                                <strong>Note:</strong> The &#60;td&#62; elements are the data containers of the table.They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
                                 
-                
-                               
-                            </div>
-                        </div>  
-                    </div>
-                     <!--end slider item-->
+                                <h3>Nesting Tags</h3>
+                                When considering HTML structure, it’s very important to understand that you can have tags inside tags (nesting), but you can’t have them overlap. <br />
 
-                     <!--slider item-->
-                    <div class="swiper-slide" style="text-align:center">
-                        <span></span>
-                        
-                        <div>
-                            
-                            <div class="content-body" >
-                                <h3>Block-level Elements</h3>
-                                
-                               
-                                    A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
-                                   <strong>The &#60;div&#62; element is a block-level element.
-                                    The &#60;div&#62; element is often used as a container for other HTML elements.</strong> 
-                                    The &#60;div&#62; element has no required attributes, but both style and class are common.
-                                    When used together with CSS, the &#60;div&#62; element can be used to style blocks of content:
-                               
-                                    <div class="main-topic-wrap">
-                                        <strong>
-                                            Examples of block-level elements:
-
-                                            <li> &#60;div&#62;</li>
-                                            <li> &#60;h1&#62; - &#60;h6&#62;</li> 
-                                            <li>&#60;p&#62;</li>
-                                            <li>&#60;form&#62;</li>
-
-                                        </strong>
-                                    </div>
-
-                                       
-                                
-                                <h3>Inline Elements</h3>
-                                
-                                     <strong>An inline element does not start on a new line and only takes up as much width as necessary.</strong>This is an inline &#60;span&#62; element inside a paragraph.
-                                
+                                <br />So this is fine:
+                                <div class="main-topic-wrap">
+                                    &#60;strong&#62;&#60;em&#62;Bold and italic&#60;/em&#62;&#60;/strong&#62;
+                                </div>
+                                    <br />But this isn’t fine: <br />
                                  <div class="main-topic-wrap">
-                                    <strong>Examples of inline elements: <br />
-                                         <li> &#60;span&#62;</li>
-                                        <li> &#60;a&#62;</li> 
-                                        <li>&#60;img&#62;</li>
-                                    </strong>
-                                </div>      
-                            </div>
-                        </div>  
-                    </div>
-                     <!--end slider item-->
-
-                      <!--slider item-->
-                    <div class="swiper-slide" style="text-align:center">
-                        <span></span>
-                        
-                        <div>
-                            
-                            <div class="content-body" >
-                                <h3>HTML Links - Hyperlinks</h3>
-                                 
-                                 HTML links are hyperlinks.<br />
-                                 You can click on a link and jump to another document
-                                 When you move the mouse over a link, the mouse arrow will turn into a little hand.<br />
+                                    &#60;strong&#62;&#60;em&#62;Bold and italic&#60;/strong&#62;&#60;/em&#62;
+                                </div>
                                
-                                <strong>Note: A link does not have to be text. It can be an image or any other HTML element.</strong><br /><br />
-                                     <div class="main-topic-wrap">
-                                     In HTML, links are defined with the &#60;a&#62; tag <br /><br />
-                                     &#60;a href="https://www.google.com.ph/?gws_rd=ssl"&#62;Google Search&#60;a&#62; <br /><br />
-                                    <strong> The href attribute specifies the destination address</strong> (https://www.google.com.ph/?gws_rd=ssl) of the link.<br /><br />
-                                     The link text is the visible part (Google Search).<br />
-                                    <strong> Clicking on the link text will send you to the specified address.</strong>
-                                      </div>
-
-                                     <h3>Local Links</h3>
-                                      <div class="main-topic-wrap">
-                                          <strong> A local link (link to the same web site) is specified with a relative URL </strong> <br />
-                                          &#60;a href="html_images.asp"&#62;HTML Images &#60;a&#62;
-                                    </div>
-  
                             </div>
                         </div>  
                     </div>
