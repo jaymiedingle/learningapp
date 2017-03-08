@@ -8,17 +8,15 @@
                 <i class="icon icon-back"></i><span class="back-btn">Back</span>
             </a>
         </div>
-        <div class="center sliding">My First JQuery</div>
-        <div class="right">
-            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-        </div>
+        <div class="center sliding">JQuery</div>
+        
     </div>
 </div>
 
 
 
 <div class="pages">
-    <div data-page="about" class="page">
+    <div data-page="intro" class="page">
         <div class="page-content">
 
 
@@ -27,37 +25,166 @@
                   <div class="swiper-pagination"></div>
                   <div class="swiper-wrapper">
 
+
+                    <!--slider item-->
                     <div class="swiper-slide" style="text-align:center">
-                        <span>Introduction</span>
-                        <img class="featured-img" src="img/html-css.jpg" alt="" >
+                        <span></span>
+                        <img class="featured-img" src="img/jquery.jpg" alt="" >
                         <div>
                             
-                            <img class="" src="img/html.jpg" alt="" >
-                            <img class="" src="img/css.jpg" alt="" >
+                            <div class="content-body" >
+                                <h3>What is PHP?</h3>
+
+                                <div class="main-topic-wrap">
+                                    <li>PHP is a widely-used, open source scripting language</li>
+                                    <li>PHP scripts are executed on the server</li>
+                                    <li>PHP is free to download and use</li>
+                                </div>
+                            
+                               
+                                <h3>What Can PHP Do?</h3>
+                                <div class="main-topic-wrap">
+                                    <li>PHP can create, open, read, write, delete, and close files on the server</li>
+                                    <li>PHP can collect form data</li>
+                                    <li>PHP can send and receive cookies</li>
+                                    <li>PHP can add, delete, modify data in your database</li>
+                                    <li>PHP can be used to control user-access</li>
+                                    <li>PHP can encrypt data</li>
+                                </div>
+                            </div>
                         </div>  
                     </div>
+                    <!--end slider item-->
 
 
-                    <div class="swiper-slide" style="text-align:center"><span></span>
-                        <img class="featured-img-html" src="img/html2.jpg" alt="" >
+                     <!--slider item-->
+                    <div class="swiper-slide" style="text-align:center">
+                        <span></span>
+                        <div>
+                            
+                            <div class="content-body" >  
+                                    <h3>PHP and HTML</h3>                         
+                                    
 
+                                    PHP scripts are embedded inside HTML files. The start of a PHP script is indicated by <strong>&#60;?php and the end is indicated by ?&#62;.</strong> When a script is run, it’s replaced in the HTML by its output.<br /><br /> 
+
+                                <div class="main-topic-wrap">
+                                    For example, the following PHP script outputs the text ‘Hello’:<br />
+
+                                   <strong>&#60;b&#62;&#60;?php echo 'Hello'; ?&#62;&#60;/b&#62;</strong><br /> 
+                                    The above PHP script will be replaced by its output. So the resulting HTML is this:
+
+                                   <strong>&#60;b&#62;Hello&#60;b&#62;</strong>
+                                </div>
+                                    <br /> 
+                                <div class="main-topic-wrap">
+                                     There can be an unlimited number of PHP scripts in an HTML file, and they can be placed anywhere inside the file
+                                </div>
+                                
+                                   <h4>Basic PHP Syntax</h4>
+                                        <strong>A PHP script can be placed anywhere in the document.</strong>
+
+                                        A PHP script starts with&#60;?php and ends with ?&#62;:
+                                    <div class="main-topic-wrap">
+                                         &#60;?php
+                                        // PHP code goes here
+                                        ?&#62;
+                                        The default file extension for PHP files is ".php".
+
+                                    </div>
+                                     A PHP file normally contains HTML tags, and some PHP scripting code.
+
+                                    
+                            </div>
+                        </div>  
                     </div>
+                    <!--end slider item-->
 
-                    <div class="swiper-slide"  style="text-align:center"><span></span>
-                        <img class="featured-img-html" src="img/html3.jpg" alt="" >
+                     <!--slider item-->
+                    <div class="swiper-slide" style="text-align:center">
+                        <span></span>
+                        <div>
+                            <div class="content-body" >
+                                <h3>  Comments in PHP</h3> 
+                                          
+                                        A comment in PHP code is a line that is not read/executed as part of the program. 
+                                        Its only purpose is to be read by someone who is looking at the code.
 
-                        <p> <img class="featured-img-html" src="img/html4.jpg" alt="" ></p>
+                                <div class="main-topic-wrap">
+                                       
+                                        Comments can be used to:
+                                        <li>Let others understand what you are doing</li>
+                                        <li>Remind yourself of what you did</li>
+                                </div>
+                                  Most programmers have experienced coming back to their own work a year or two later and having to re-figure out what they did. 
+                                <br />
+
+                                <div class="main-topic-wrap">
+                                       &#60;!DOCTYPE htmlh&#62; <br />
+                                           &#60;htmlh&#62; <br />
+                                            &#60;body&#62; <br />
+
+                                             &#60;?php <br />
+                                            // This is a single-line comment <br />
+
+                                            # This is also a single-line comment <br />
+
+                                            /* <br />
+                                            This is a multiple-lines comment block <br />
+                                            that spans over multiple <br />
+                                            lines <br />
+                                            */ <br />
+
+                                            // You can also use comments to leave out parts of a code line <br />
+                                            $x = 5 /* + 15 */ + 5; <br />
+                                            echo $x; <br />
+                                            ?&#62; <br />
+
+                                            &#60;/body&#62; <br />
+
+                                            &#60;/htmlh&#62; <br />
+                                </div>
+                              
+                            </div>
+                        </div>  
                     </div>
+                    <!--end slider item-->
 
-                    <div class="swiper-slide" style="text-align:center"><span></span>
-                        <img class="featured-img-html" src="img/html5.jpg" alt="" >
+                     <!--slider item-->
+                    <div class="swiper-slide" style="text-align:center">
+                        <span></span>
+                        <div>
+                            <div class="content-body" >
+                                <h3>  Creating (Declaring) PHP Variables</h3>
+                                    In PHP, a variable starts with the $ sign, followed by the name of the variable:<br />
 
+                                <div class="main-topic-wrap">
+                                       
+                                        &#60;?php
+                                            $txt = "Hello world!";
+                                            $x = 5;
+                                            $y = 10.5;
+                                            ? &#62;
+                                </div>
+                                  Think of variables as containers for storing data.
+                                <br />
+                                    <h3>PHP Variables</h3>
+                                     A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).<br />
+                                <div class="main-topic-wrap">
+                                        Rules for PHP variables:
+                                        <li> A variable starts with the $ sign, followed by the name of the variable</li>
+
+                                         <li> A variable name must start with a letter or the underscore character</li>
+                                         <li>A variable name cannot start with a number</li>
+                                         <li> A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                                         <li> Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+                                        
+                                </div>
+                              
+                            </div>
+                        </div>  
                     </div>
-
-                    <div class="swiper-slide" style="text-align:center"><span></span>
-                        <img class="featured-img-html" src="img/html6.jpg" alt="" >
-
-                    </div>
+                    <!--end slider item-->
 
                     
 
