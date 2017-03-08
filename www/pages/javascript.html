@@ -1,7 +1,6 @@
 <!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
 
 <!-- Top Navbar-->
-<!--
 <div class="navbar">
     <div class="navbar-inner">
         <div class="left">
@@ -9,30 +8,15 @@
                 <i class="icon icon-back"></i><span class="back-btn">Back</span>
             </a>
         </div>
-        <div class="center sliding">Basic of JavaScript</div>
-        <div class="right">
-            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-        </div>
-    </div>
-</div>
--->
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="left">
-            <a href="#" class="back link">
-                <i class="icon icon-back"></i><span class="back-btn">Back</span>
-            </a>
-        </div>
-        <div class="center sliding">Javascript</div>
+        <div class="center sliding">Basic of Javascript</div>
         
     </div>
 </div>
 
 
 
-
 <div class="pages">
-    <div data-page="about" class="page">
+    <div data-page="intro" class="page">
         <div class="page-content">
 
 
@@ -41,41 +25,137 @@
                   <div class="swiper-pagination"></div>
                   <div class="swiper-wrapper">
 
+
+                    <!--slider item-->
                     <div class="swiper-slide" style="text-align:center">
-                        <span>Introduction</span>
+                        <span></span>
                         <img class="featured-img" src="img/javascript.jpg" alt="" >
                         <div>
-                            <div class="main-topic-wrap">
-                                JavaScript is a language that adds functionality and interactivity to websites. While HTML can create a web page, and CSS can customize its appearance, the page will be static. It won’t do anything.
-                            </div>
+                            <h3>Introduction</h3>
+                            <div class="content-body" >
 
-                                How do you fix that? JavaScript! JavaScript makes many things possible on web pages. <strong>It responds to user events like clicks, hovers or key presses. It changes HTML, changes CSS and makes web pages interactive.
-                                </strong><br>
+                                <div class="main-topic-wrap">
+                                    <strong>  JavaScript</strong>  is a language that adds functionality and interactivity to websites. While HTML can create a web page, and CSS can customize its appearance, the page will be static. It won’t do anything.
+                                </div>
+                                <br /><br />
+                    
+                    
+                                How do you fix that? JavaScript! JavaScript makes many things possible on web pages. <strong>It responds to user events like clicks, hovers or key presses. It changes HTML, changes CSS and makes web pages interactive.</strong>
                                 Like CSS, there are three ways that JavaScript is embedded on web pages – inline, internal and external.
-                            
-                           
+
+                                
+                                <br />
+
+                                
+
+                            </div>
                         </div>  
                     </div>
+                    <!--end slider item-->
 
 
-                    <div class="swiper-slide" style="text-align:center"><span></span>
-                       
+                     <!--slider item-->
+                    <div class="swiper-slide" style="text-align:center">
+                        <span></span>
+                        <div>
+                            
+                            <div class="content-body" >  
+                                    <h3> Inline JavaScript</h3>                         
+                                    When embedding inline CSS in an HTML tag, websites use the style attribute.<br /><br />
+                                <div class="main-topic-wrap">
+                                     When embedding inline JavaScript however, there are a number of attributes that are used.One of these attributes is onclick. <strong>Any JavaScript code inside an onclick attribute gets executed when the HTML element is clicked.</strong>
 
+                                </div>
+                                <br />
+                                    The inner text of the below  &#60;strong&#62; tag is currently ‘Text’. JavaScript will change the inner text to ‘Bold Text’ when the element is clicked. <br /> <br />
+
+                                    <div class="main-topic-wrap">
+                                        &#60;strong&#62; onclick="this.innerText = 'Bold Text';">Text &#60;/strong&#62;
+
+                                    </div>
+
+                                    
+                            </div>
+                        </div>  
                     </div>
+                    <!--end slider item-->
 
-                    <div class="swiper-slide"  style="text-align:center"><span></span>
-                        
+
+                     <!--slider item-->
+                    <div class="swiper-slide" style="text-align:center">
+                        <span></span>
+                        <div>
+                            <div class="content-body" >
+                                <h3>Internal JavaScript</h3> 
+                                            Like CSS, inline JavaScript is uncommon. Often, websites have scripts that involve multiple HTML elements, so they tend to collect them all up and place them together in one big script, using the HTML <strong>&#60;script&#62; tag.</strong><br />
+                                <div class="main-topic-wrap">
+                                     &#60;script&#62;<br />
+                                                var num = 142857;<br />
+                                                document.getElementById('bold').innerText = num;<br />
+                                            &#60;/script&#62;
+                                </div>
+                                <br />
+                                        <strong>The &#60;script&#62; tag is often placed as the last element inside a website’s &#60;body&#62;. </strong>This is so that all the HTML elements can fully load before they get transformed by the JavaScript..
+                                
+                                <h3>External JavaScript</h3>        
+
+                                        Often, a website will have its JavaScript in a <strong>separate file called script.js.</strong> This allows the site to use the same script on multiple web pages. Here’s how a website would link to an external JavaScript file, assuming the file name is script.js:
+
+                                        <div class="main-topic-wrap">
+                                            &#60;script src="script.js">&#60;/script&#62;
+                                        </div>
+                                        Like with internal JavaScript, this tag is often placed near the end of the <body> element on a web page.
+ 
+
+                            </div>
+                        </div>  
                     </div>
+                    <!--end slider item-->
 
-                    <div class="swiper-slide" style="text-align:center"><span></span>
-                       
+                     <!--slider item-->
+                    <div class="swiper-slide" style="text-align:center">
+                        <span></span>
+                        <div>
+                            <div class="content-body" >
+                                <h3> JavaScript Syntax</h3> 
+                                            JavaScript <strong>syntax</strong> is the set of rules, how JavaScript programs are constructed.
+                                             JavaScript statements are composed of:
+                                        <strong>Values, Operators, Expressions, Keywords, and Comments.</strong>The JavaScript syntax defines two types of values: Fixed values and variable values.<br />
 
+
+                                <div class="main-topic-wrap">
+                                       
+                                        Fixed values are called <strong>literals</strong>The most important rules for writing fixed values are: Numbers are written with or without decimals. 
+                                </div>
+                                <br />
+
+                                <div class="main-topic-wrap">
+                                        Strings are text, written within double or single quotes. Variable values are called <strong>variables</strong>. In a programming language, variables are used to store data values.
+
+                                            JavaScript uses the var keyword to declare variables.
+
+                                            An equal sign is used to assign values to variables.
+                                </div>
+                              
+
+                                <h3>JavaScript Operators</h3>
+                                 <div class="main-topic-wrap">
+                                        JavaScript uses arithmetic operators ( + - *  / ) to compute values:
+
+                                (5 + 6) * 10 <br /> 
+
+                                JavaScript uses an assignment operator ( = ) to assign values to variables: <br /> 
+                                var x, y;<br /> 
+                                x = 5;<br /> 
+                                y = 6;
+
+                                </div>
+                               
+
+                            </div>
+                        </div>  
                     </div>
-
-                    <div class="swiper-slide" style="text-align:center"><span></span>
-                       
-
-                    </div>
+                    <!--end slider item-->
 
                     
 
