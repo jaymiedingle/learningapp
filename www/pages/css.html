@@ -34,13 +34,9 @@
                             <h3>What is CSS?</h3>
                             <div class="content-body" >
                                 <strong>CSS stands for Cascading Style Sheets</strong>  , and is a code that describes how to display HTML <br /><br />
-
-                                
+                                In the previous HTML tutorial, we told you that the HTML  &#60;strong&#62;  tag makes text bold, and the &#60;em&#62; tag makes text italic. Well, not really. HTML doesn’t actually make text bold or italic – it only suggests that text should be bold or italic. It’s actually CSS that delivers the instruction.<br /><br />
                                 <div class="main-topic-wrap">
-                                    HTML adds structure to text by annotating it with tags.<strong>A tag is made up of a word or abbreviation surrounded by angled brackets.</strong>  In HTML, tags are placed at the beginning and at the end of the text they are structuring. These tag-content-tag combinations form HTML elements, or nodes. <br />
-
-                                   
-
+                                  <strong>CSS can deliver many different instructions for how to display HTML. Telling the browser to find all the &#60;strong&#62; elements and make them bold, or to find all the &#60;em&#62;  elements and make them italic are just two examples.</strong> <br />
                                    
                                 </div>
                                 <br />
@@ -58,34 +54,25 @@
                         <div>
                             
                             <div class="content-body" >
-                                <h3>HTML Structure</h3>
-                                
-                                
-                                <div class="main-topic-wrap">
-                                   
-                                    &#60;!DOCTYPE html&#62;<br />
-                                     &#60;html&#62;<br />
-                                     &#60;head&#62;<br />
-                                     &#60;title&#62;A Web Page &#60;/title&#62;<br />
-                                     &#60;/head&#62;<br />
-                                     &#60;body&#62;<br />
-                                     &#60;h1&#62;A Web Page &#60;/h1&#62;<br />
-                                     &#60;/body&#62;<br />
-                                     &#60;/html&#62;
-                                   
+                                <h3>CSS Rules</h3>
+                                 <div class="main-topic-wrap">
+                                  strong { <br />
+                                              font-weight: bold;<br />
+                                          }<br />
+                                          em {<br />
+                                              font-style: italic;<br />
+                                          }<br />
+                                          h1 {<br />
+                                              font-size: 32px;<br />
+                                          }<br />
+                                  
                                 </div>
+                                Looking at the above example, you can see that a <strong>CSS rule is made up of three parts: a selector, a property and a value</strong> <br /><br />
+                                The text outside of the curly brackets is called the <strong>selector</strong>. It’s simply the name of the HTML tag, without the &#60;and &#62;. The selector indicates which HTML element the below styles are to be applied to.<br /><br />
+                                The text on the left side of the colon is called the <strong>property</strong>. This the type of style being applied; for example, font weight, font style or font size.<br />
+                                The text on the right side of the colon is called the <strong>value</strong>, and is the style that’s being applied. Some values use certain units – for example, font sizes are written in terms of pixels (px).
+                               
                                 <br />
-                                
-                                <strong>&#60;!DOCTYPE html&#62; is the first and most important line of an HTML document.</strong> It ensures that web browsers will correctly read the HTML that follows. If you visit a page that doesn’t include it, the page might not display as the owner intended.<br /><br />
-
-                                Next, there is an <strong>&#60;html&#62; tag that contains the entire contents of the page.</strong> There are only two tags immediately inside of <strong>&#60;html&#62;</strong>, and they are <strong>&#60;head&#62;</strong> and <strong>&#60;body&#62;</strong>.<br /><br />
-
-                               <strong>&#60;head&#62;</strong> is the place for information about the web page – the title, a description, its correct URL, keywords to describe the page etc.<br />
-
-                                <strong>&#60;body&#62;</strong> is where you’ll find everything that shows up on the page itself. <strong>This includes headers, main content, sidebars and footers.</strong><br />
-
-                              
-
                             </div>
                         </div>  
                     </div>
@@ -98,33 +85,19 @@
                         <div>
                             
                             <div class="content-body" >
-                                <h3>Element</h3>
-
-                                Here’s what an element looks like:
-                                 <div class="main-topic-wrap"><strong>&#60;Element&#62;</strong></div>
-                                Note that the closing tag includes a forward slash immediately inside of the opening bracket. Closing tags are very important, since they mark where an element ends.
-                            
-
-                                <h3>HTML Tags</h3>
-                          
-                                There are two broad divisions of web development.
-                                To make text bold, websites use the <strong> &#60;strong&#62;</strong> tag.Here’s an example:
+                                <h3>Inline CSS</h3>
+                                Web browsers have default CSS styles for displaying HTML – for example, instructing text inside &#60;strong&#62; tags to display as bold, or text inside &#60;h1&#62; tags to be 32 pixel font.
+                                However, each website adds its own custom CSS as well. <strong>One way websites do this is by embedding their CSS style right inside its corresponding HTML tag, using an HTML attribute.</strong><br /><br /> For example, to display a &#60;strong&#62; element in purple, here is the code that would be used:<br /><br />
 
                                 <div class="main-topic-wrap">
-                                    
-                                    Closing tags are &#60;strong&#62;very&#60;/strong&#62; important.<br />
-                                    Here’s the result:<br />
-                                    Closing tags are <strong>very</strong> important.<br />
-                                    The word ‘very’ has been bolded because it is surrounded by the &#60;strong&#62; tag.
+                                  &#60;strong style="color: purple;"&#62;I am purple. &#60;strong&#62;<br />
+                                  The result is:<br />
+                                  <strong style="color: purple;">I am purple.</strong>
                                 </div>
-                                
+                                <br /><br />
+                                Notice that there’s the word <strong>style (the attribute)</strong>, followed by an equals sign, followed by a set of quotation marks that contain the CSS code. Also notice that <strong>there is no selector, because it’s already clear which element is being targeted.</strong>
+
                                
-                                <strong>Italics</strong> are much the same, but the&#60;em&#62; tag is used. Example:.
-                                <div class="main-topic-wrap">
-                                    In HTML, &#60;strong&#62;bold&#60;/strong&#62; is for  &#60;strong&#62; making text stand out&#60;/strong&#62;, and  &#60;em&#62;italics&#60;/em&#62; are for &#60;em&#62;emphasis&#60;/em&#62;.<br />
-                                    Result:
-                                    In HTML, <strong>bold</strong> is for <strong>making text stand out</strong>, and <em>italics</em> are for <em>emphasis</em>.
-                                </div>
                               
                             </div>
                         </div>  
@@ -137,43 +110,22 @@
                         <span></span>
                         <div>
                             <div class="content-body" >
-                                 <h3>The&#60;h1&#62; to &#60;h6&#62; tags</h3>
-                                  are used to define HTML headings.<br />
-                                 Example:
+                                 <h3>Internal CSS</h3>
+                                 Inline CSS is uncommon, because it slows down page loading time. A more common method is to gather all the CSS styles together and place them within  &#60;style&#62; HTML tags. <br /><br />
+                                 This is called an internal style sheet.
 
-                                <div class="main-topic-wrap">
-                                    <table>
-                                      <tr>
-                                        <td>&#60;h1&#62;Sample&#60;/h1&#62;</td>
-                                        <td> <h1>Sample</h1> </td>
-                                      </tr>
-                                      <tr>
-                                        <td>&#60;h2&#62;Sample&#60;/h2&#62;</td>
-                                        <td><h2>Sample</h2></td>
-                                      </tr>
-                                      <tr>
-                                        <td>&#60;h3&#62;Sample&#60;/h3&#62;</td>
-                                        <td><h3>Sample</h3></td>
-                                      </tr>
-                                       <tr>
-                                        <td>&#60;h4&#62;Sample&#60;/h4&#62;</td>
-                                        <td> <h4>Sample</h4> </td>
-                                      </tr>
-                                      <tr>
-                                        <td>&#60;h5&#62;Sample&#60;/h5&#62;</td>
-                                        <td><h5>Sample</h5></td>
-                                      </tr>
-                                      <tr>
-                                        <td>&#60;h6&#62;Sample&#60;/h6&#62;</td>
-                                        <td><h6>Sample</h6></td>
-                                      </tr>
-                                    </table>
-                                
+                                <div class="main-topic-wrap"><br />
+                                   &#60;style&#62; <br />
+                                   h1 {<br />
+                                        color: red;<br />
+                                    }<br />
+                                    h2 {<br />
+                                        color: black;<br />
+                                    }<br />
+                                    &#60;/style&#62;<br />
                                 </div>
-                                <br />
-
-                                &#60;h1&#62; defines the <strong>most important heading.</strong> <br />
-                                &#60;/h6&#62; defines the <strong>least important heading.</strong><br />
+                                <br /><br />
+                                The &#60;style&#62; element belongs in the &#60;head&#62; of a web page, along with the title, description and other informational elements. <strong>An internal style sheet can contain as many CSS rules as the page needs, for as many different HTML elements as the page has.</strong>
                                
 
                             </div>
@@ -190,26 +142,27 @@
                         <div>
                             
                             <div class="content-body" >
-                                <h3>Title Tag</h3>
-                                You probably noticed the &#60;title&#62; tag and that it has the same contents as the &#60;h1&#62; tag. What’s the difference? 
+                                <h3>External CSS</h3>
+                                There is a third way websites add CSS, and that is writing it in a separate file.<strong>The benefit of this is that they can link the same CSS file to multiple pages on their site.</strong>  This is the method that the majority of websites use.
+                                When CSS is written in an external file, it needs to be linked up with the main HTML. To do this, websites use the following HTML tag:<br />
 
                                 <div class="main-topic-wrap">
-                                   
-                                    While <strong>&#60;h1&#62;</strong> is what appears on the page itself, <strong>&#60;title&#62; is used as the title of the browser window or tab.</strong> <strong>&#60;title&#62;</strong> is also used in search engine results. The contents of these two tags don’t need to be identical, but sometimes they are.
+                                  &#60;link rel="stylesheet" href="style.css"&#62;
                                 </div>
-                                
-                                <h3>Nesting Tags</h3>
-                                When considering HTML structure, it’s very important to understand that you can have tags inside tags (nesting), but you can’t have them overlap. <br />
+                                    
+                                    The <strong>rel="stylesheet" attribute indicates that it’s a style sheet that’s being linked to.</strong><br />
+                                    The href attribute specifies the file name of the style sheet – in this case style.css. Notice that there is no closing tag.
 
-                                <br />So this is fine:
-                                <div class="main-topic-wrap">
-                                    &#60;strong&#62;&#60;em&#62;Bold and italic&#60;/em&#62;&#60;/strong&#62;
-                                </div>
-                                    <br />But this isn’t fine: <br />
+                                     <h3>The element Selector</h3>
+                                     <strong>The element selector selects elements based on the element name.</strong>
+                                     You can select all <p> elements on a page like this (in this case, all &#60;p&#62; elements will be center-aligned, with a red text color):
                                  <div class="main-topic-wrap">
-                                    &#60;strong&#62;&#60;em&#62;Bold and italic&#60;/strong&#62;&#60;/em&#62;
-                                </div>
-                               
+                                     Example<br />
+                                          p {<br />
+                                              text-align: center;<br />
+                                              color: red;<br />
+                                          }
+                                  </div>
                             </div>
                         </div>  
                     </div>
@@ -222,26 +175,39 @@
                         <div>
                             
                             <div class="content-body" >
-                                <h3>Title Tag</h3>
-                                You probably noticed the &#60;title&#62; tag and that it has the same contents as the &#60;h1&#62; tag. What’s the difference? 
-
-                                <div class="main-topic-wrap">
-                                   
-                                    While <strong>&#60;h1&#62;</strong> is what appears on the page itself, <strong>&#60;title&#62; is used as the title of the browser window or tab.</strong> <strong>&#60;title&#62;</strong> is also used in search engine results. The contents of these two tags don’t need to be identical, but sometimes they are.
-                                </div>
-                                
-                                <h3>Nesting Tags</h3>
-                                When considering HTML structure, it’s very important to understand that you can have tags inside tags (nesting), but you can’t have them overlap. <br />
-
-                                <br />So this is fine:
-                                <div class="main-topic-wrap">
-                                    &#60;strong&#62;&#60;em&#62;Bold and italic&#60;/em&#62;&#60;/strong&#62;
-                                </div>
-                                    <br />But this isn’t fine: <br />
-                                 <div class="main-topic-wrap">
-                                    &#60;strong&#62;&#60;em&#62;Bold and italic&#60;/strong&#62;&#60;/em&#62;
-                                </div>
+                                <h3> The id Selector</h3>
                                
+                                      <strong>The id selector uses the id attribute of an HTML element to select a specific element.</strong>
+
+                                      The id of an element should be unique within a page, so <strong>the id selector is used to select one unique element!</strong>
+
+                                      To select an element with a specific id, write a <strong>hash (#) character, followed by the id of the element.
+                                      </strong><br />
+                                      The style rule below will be applied to the HTML element with id="para1":<br />
+
+
+                                <div class="main-topic-wrap">
+                                      Example<br />
+                                      #para1 {<br />
+                                          text-align: center;<br />
+                                          color: red;<br />
+                                      }
+                                </div>
+                                <strong>Note: An id name cannot start with a number</strong>
+                                
+                                <h3>The class Selector</h3>
+                                
+                                    The class selector selects elements with a specific class attribute.
+
+                                    <strong>To select elements with a specific class, write a period (.) character, followed by the name of the class.</strong>
+
+                                    In the example below, all HTML elements with class="center" will be red and center-aligned:
+                                    <div class="main-topic-wrap">
+                                        .center {<br />
+                                            text-align: center;<br />
+                                            color: red;
+                                        }
+                                    </div>
                             </div>
                         </div>  
                     </div>
