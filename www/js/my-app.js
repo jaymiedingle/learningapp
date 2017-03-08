@@ -25,15 +25,9 @@ $$(document).on('deviceready', function() {
 
 // Option 1. Using page callback for page (for "about" page in this case) (recommended way):
 
-myApp.onPageInit('intro', function (page) {
-    // Do something here for "about" page
-    //  var mySwiper = myApp.swiper('.swiper-container', {
-    //   pagination: '.swiper-pagination',
-    //   paginationHide: false,
-    //   paginationClickable: true,
-    //   nextButton: '.swiper-button-next',
-    //   prevButton: '.swiper-button-prev',
-    // });
+myApp.onPageInit('index', function (page) {
+
+
 
 })
 
